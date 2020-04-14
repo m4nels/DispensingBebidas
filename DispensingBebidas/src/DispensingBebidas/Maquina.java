@@ -1,11 +1,28 @@
 package DispensingBebidas;
 
-public class maquina {
+import java.util.Scanner;
+
+public class Maquina {
 	
-	int stock=0;
-	int unidadesVendidas=0;
-	int precio=500;
-	boolean pagado=false;
+	private int opcionBebida;
+	
+	public int getOpcionBebida() {
+		return opcionBebida;
+	}	
+	
+	public void setComprar() {
+		System.out.println("Seleccione una bebida:");
+		Scanner scanner = new Scanner (System.in);
+		opcionBebida = scanner.nextInt();
+	}
+	
+	
+		
+		/*
+	private int stock=0;
+	private int unidadesVendidas=0;
+	private int precio=500;
+	private boolean pagado=false;
 	
 	public void inicializar (int stockActual, int precioActual) {
 		this.stock = stockActual;
@@ -36,5 +53,5 @@ public class maquina {
 	
 	public void reposicionStock (int cantidadReposicionStock) {
 		this.stock = cantidadReposicionStock;
-	}
+	}*/
 }
