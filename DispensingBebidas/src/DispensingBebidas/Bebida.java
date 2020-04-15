@@ -31,7 +31,8 @@ public class Bebida {
 	}
 	 
 	public int getReposicion () {
-		return this.stock = this.cantidadReposicion; // ********* porque no se pone igual el this.cantidadReposicion i this.stock
+		this.stock = this.cantidadReposicion;
+		return this.stock;
 	}
 	
 	public void setProducto (int idProducto, String nombreProducto, int stockProducto, double precioProducto) {

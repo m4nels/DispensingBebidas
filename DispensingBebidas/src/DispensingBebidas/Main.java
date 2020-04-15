@@ -101,8 +101,6 @@ public class Main {
 					switch(oMaquina.getOpcionBebida()) {
 					case 1:
 						refreco01.setReponerProducto();
-						refreco01.consultaStock();
-						System.out.println("repo "+refreco01.getReposicion());// ********* porque no se pone igual el this.cantidadReposicion i this.stock
 						break;
 					case 2:
 						refreco02.setReponerProducto();
